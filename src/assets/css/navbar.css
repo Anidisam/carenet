@@ -3,12 +3,33 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-
+  /* position: fixed; */
+  /* top: 16px;
+  left: 16px; */
+  /* width: 1280px;
+  height: 128px; */
 }
 
 .navbar-logo {
   font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  font-family: monospace;
+  /* font-weight: bold; */
+  color: #192735;
+  /* font:Montserrat ; */
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.navbar-btn{
+  width: 205px;
+  height: 48px;
+  border-radius:24px;
+  color:white;
+  background-color:#DF014E;
+  border: none;
+  /* font: Montserrat; */
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 40px;
+  gap:8px;
+  line-height: 24px;
 }

@@ -3,9 +3,9 @@ import "../assets/css/navbar.css";
 
 const Navbar = () => {
   return (
-<nav className="navbar">
+<nav className= "navbar">
     <div className="navbar-logo">Carenet</div>
-    <button ></button>
+    <button className="navbar-btn">Download App</button>
 </nav>
   );
 };
