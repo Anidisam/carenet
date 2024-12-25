@@ -1,0 +1,141 @@
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: row; /* Default: Row for larger screens */
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; 
+  padding: 0 5%; 
+  background: #d3d3d3; 
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000; 
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333; 
+  margin-bottom: 2rem; 
+}
+
+/* Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.btn-red {
+  background-color: #DF014E;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: #ef3073; 
+}
+
+.btn-red .arrow {
+  margin-left: 0.5rem; 
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  color: #DF014E;
+  border: 2px solid #DF014E;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-red:hover {
+  background-color: rgb(235, 112, 112);
+  color: #fff; 
+}
+
+/* Right Image */
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Limit image size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack content vertically on tablets */
+    justify-content: center;
+    height: auto; /* Adjust height */
+    padding: 2rem; /* Add padding */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Full width */
+    text-align: center; /* Center-align content */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .hero-content p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+  }
+
+  .hero-buttons {
+    justify-content: center; /* Center buttons */
+  }
+
+  .hero-image {
+    max-width: 100%;
+    text-align: center; /* Center-align image */
+    margin-top: 2rem; /* Add spacing */
+  }
+
+  .hero-image img {
+    max-width: 100%; /* Full-width image */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem; /* Further reduce heading size */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Further reduce paragraph size */
+  }
+
+  .btn-red, .btn-outline-red {
+    padding: 0.6rem 1rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Reduce button text size */
+  }
+}
