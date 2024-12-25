@@ -32,4 +32,9 @@
   padding: 12px 40px;
   gap:8px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.navbar-btn:hover{
+    background-color: #e06d95;
 }
