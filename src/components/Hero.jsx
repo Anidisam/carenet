@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/css/hero.css";
 import HeroImage from "../assets/images/hero.png";
+import Arrow from "../assets/images/arrow-c.svg"
 
 const Hero = () => {
   return (
@@ -18,9 +19,9 @@ const Hero = () => {
         {/* Buttons */}
         <div className="hero-buttons">
           <button className="btn-red">
-            Bring me in!
+            Learn more <img src ={Arrow}/>
           </button>
-          <button className="btn-outline-red">Download our app</button>
+          <button className="btn-outline-red">Download our app </button>
         </div>
         {/* Right Image */}
 

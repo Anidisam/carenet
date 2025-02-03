@@ -6,10 +6,7 @@
   justify-content: space-between;
   height: 100vh; 
   padding: 0 5%; 
-  background: linear-gradient(275.88deg, rgba(102, 102, 102, 0) 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%);
-  /* background: linear-gradient(275.88deg, #66666600 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%); */
-  margin-right: -8px;
-  margin-left: -8px;
+  background: linear-gradient(275.88deg, rgba(102, 102, 102, 0) 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%) ,linear-gradient(275.07deg, rgba(102, 102, 102, 0) -0.06%, rgba(32, 32, 32, 0.477273) 58.01%, rgba(0, 0, 0, 0.7) 88.24%);
   position: relative;
 }
 
@@ -39,50 +36,47 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  /* flex-wrap: wrap; Allow wrapping on smaller screens */
 }
 
 .btn-red {
-  background-color: #DF014E;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius:4px;
+  color:white;
+  background-color:#DF014E;
+  border: none;
+  /* font: Montserrat; */
+  font-weight: 700;
+  font-size: 16px;
+  gap: 20px;
+  line-height: 24px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.btn-red:hover {
+/* .btn-red:hover {
   background-color: #ef3073; 
-}
+} */
 
-.btn-red .arrow {
-  margin-left: 0.5rem;  
-}
 
 .btn-outline-red {
   background-color: transparent;
-  color: #DF014E;
-  border: 2px solid #DF014E;
-  padding: 0.8rem 1.5rem;
+  /* color: white; */
+  border: 1px solid #DF014E;
+  padding: 8px;
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: white;
 }
 
-.btn-outline-red:hover {
+/* .btn-outline-red:hover {
   background-color: rgb(235, 112, 112);
   color: #fff; 
-}
-
-/* Right Image */
-/* .hero-image {
-  flex: 1;
-  max-width: 50%; */
-/* } */
+} */
 
 .hero-image img {
   position: absolute;

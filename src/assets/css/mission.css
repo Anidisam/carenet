@@ -13,12 +13,16 @@
   margin-bottom: 20px;
   color: #333;
 }
-
+.text-muted{
+  width:850px;
+  font-size: 24px;
+}
 .section p {
-  font-size: 1rem;
+  font: size 24px;
   color: #555;
   margin-bottom: 20px;
-  max-width: 600px;
+  /* max-width: 800px; */
+  /* width: 908px; */
   margin: 0 auto;
 }
 

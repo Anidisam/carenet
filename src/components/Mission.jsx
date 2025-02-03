@@ -93,7 +93,7 @@ const Mission = () => {
         <h2 className="fw-bold">OUR MISSION</h2>
         <p className="text-muted">
           Our mission is to improve patient care by providing comprehensive
-          clinical information <br /> and resources essential to physicians and
+          clinical information and resources essential to physicians and
           healthcare professionals.
         </p>
       </div>
