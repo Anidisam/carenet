@@ -7,21 +7,18 @@ const Hero = () => {
     <div className="hero-section">
       {/* Left Content */}
       <div className="hero-content">
+        <div>
         <h1>
-          Connect.
-          <br />
-          Collaborate. Care.
+          Connect. Collaborate. Care.
         </h1>
         <p>
-          Your hub for medical professionals
-          <br />
-          to chat, learn and lead
+          Your hub for medical professionals to chat, learn and lead
         </p>
-
+        </div>
         {/* Buttons */}
         <div className="hero-buttons">
           <button className="btn-red">
-            Bring me in! <span className="arrow">→</span>
+            Bring me in!
           </button>
           <button className="btn-outline-red">Download our app</button>
         </div>
