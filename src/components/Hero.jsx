@@ -1,19 +1,19 @@
 import React from "react";
 import "../assets/css/hero.css";
-import Himage from "../assets/images/care hero.jpg";
+import HeroImage from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <div className="hero-section">
+    <div className="hero-section" >
       {/* Left Content */}
       <div className="hero-content">
         <div>
-        <h1>
-          Connect. Collaborate. Care.
-        </h1>
-        <p>
-          Your hub for medical professionals to chat, learn and lead
-        </p>
+          <h1>
+            Connect. Collaborate. Care.
+          </h1>
+          <p>
+            Your hub for medical professionals to chat, learn and lead
+          </p>
         </div>
         {/* Buttons */}
         <div className="hero-buttons">
@@ -22,13 +22,16 @@ const Hero = () => {
           </button>
           <button className="btn-outline-red">Download our app</button>
         </div>
+        {/* Right Image */}
+
       </div>
 
-      {/* Right Image */}
-      <div className="hero-image">
-        <img src={Himage}alt="Medical Professional" />
+        <div className="hero-image"> 
+        <img src={HeroImage} alt="Medical Professional"  />
       </div>
+      
     </div>
+
   );
 };
 

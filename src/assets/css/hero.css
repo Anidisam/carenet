@@ -7,9 +7,10 @@
   height: 100vh; 
   padding: 0 5%; 
   background: linear-gradient(275.88deg, rgba(102, 102, 102, 0) 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%);
-
+  /* background: linear-gradient(275.88deg, #66666600 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%); */
   margin-right: -8px;
   margin-left: -8px;
+  position: relative;
 }
 
 /* .hero-content {
@@ -78,15 +79,20 @@
 }
 
 /* Right Image */
-.hero-image {
+/* .hero-image {
   flex: 1;
-  max-width: 50%;
-}
+  max-width: 50%; */
+/* } */
 
 .hero-image img {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  max-width: 400px; /* Limit image size */
+  object-fit: cover;
 }
 
 /* Media Queries for Responsiveness */
