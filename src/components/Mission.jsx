@@ -18,11 +18,9 @@ import Partner11 from "../assets/images/univadis.svg";
 import Partner12 from "../assets/images/webmd.svg";
 
 // Import Testimonial Images
-import coliquio from "../assets/images/coliquio.svg";
-import frontline from "../assets/images/frontline.svg";
-import jim from "../assets/images/jim.svg";
-import qxmd from "../assets/images/qxmd.svg";
-import saned from "../assets/images/saned.svg";
+import Testimonials from "../assets/images/Testimonial1.svg";
+import Testimonials2 from "../assets/images/Testimonial photo.svg";
+import Testimonials3 from "../assets/images/Testimonial4.svg";
 
 const testimonials = [
   {
@@ -30,47 +28,30 @@ const testimonials = [
     name: "Solape Lagbaja",
     role: "Surgeon",
     rating: 5,
-    image: coliquio,
+    image: Testimonials,
     quote: "Simply the best",
     description:
       "This platform has helped me grow! Thanks Carenet, absolutely recommend it for all pros.",
   },
   {
     id: 2,
-    name: "John Doe",
-    role: "Cardiologist",
-    rating: 4,
-    image: frontline,
-    quote: "Great Experience!",
+    name: "Kate modupe",
+    role: "Medical Laboratry Scientist",
+    rating: 5,
+    image: Testimonials2,
+    quote: "What an Amazing Platform",
     description:
-      "An amazing platform that has enhanced my career and network with other professionals.",
+      "I was able to connect with fellow professionals, impart and learn many things I didn't know. Thank you Carenet!.",
   },
   {
     id: 3,
-    name: "Jane Smith",
-    role: "Dentist",
+    name: "Dr.Cole Agunbiade",
+    role: "Ophthalmologist",
     rating: 5,
-    image: jim,
-    quote: "Fantastic!",
-    description: "I have learned so much from Carenet. Highly recommended!",
-  },
-  {
-    id: 4,
-    name: "Emily Johnson",
-    role: "Pediatrician",
-    rating: 4,
-    image: qxmd,
-    quote: "Amazing Service",
-    description: "A platform that truly cares about medical professionals.",
-  },
-  {
-    id: 5,
-    name: "Michael Brown",
-    role: "Orthopedic Surgeon",
-    rating: 5,
-    image: saned,
-    quote: "Top-notch platform!",
-    description: "Carenet has provided me with invaluable resources!",
+    image: Testimonials3,
+    quote: "Everyone Should Know About This Place.",
+    description:
+      "So far, every bit of time i spend here, I enjoy it to the fullest. Glad to find a platform where I can be there for others, help and earn. Thank you!",
   },
 ];
 
