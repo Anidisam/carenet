@@ -1,0 +1,17 @@
+.about-us-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.about-us-container p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
