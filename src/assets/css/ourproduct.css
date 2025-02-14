@@ -1,0 +1,64 @@
+.our-product {
+  text-align: center;
+  padding: 20px;
+}
+
+.our-product h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.our-product p {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Product Item */
+.product-item {
+  text-align: center;
+}
+
+/* Image Styling */
+.product-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+/* Back Button */
+.back-home-btn {
+  padding: 10px 15px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
