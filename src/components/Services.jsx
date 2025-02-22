@@ -9,7 +9,7 @@ import networkingImg from "../assets/images/networking.jpg";
 import aiSymptomCheckerImg from "../assets/images/AI-Powered.png";
 import pharmacyImg from "../assets/images/pharmacy-blogg.jpg";
 
-const OurProduct = () => {
+const Services = () => {
   const navigate = useNavigate();
 
   return (
@@ -87,4 +87,4 @@ const OurProduct = () => {
   );
 };
 
-export default OurProduct;
+export default Services;

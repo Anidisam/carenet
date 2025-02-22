@@ -6,8 +6,8 @@ import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import Download from "./components/Download";
 import Footer from "./components/Footer";
-import AboutUs from "./components/AboutUs";
-import OurProduct from "./components/OurProduct";
+import Who from "./components/Who"
+import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 
 function App() {
@@ -28,13 +28,13 @@ function App() {
           }
         />
 
-        {/* About Us Page */}
+        {/* Who Page */}
         <Route
-          path="/about-us"
+          path="/who-we-are"
           element={
             <>
               <Navbar />
-              <AboutUs />
+              <Who />
               <Footer />
             </>
           }
@@ -42,11 +42,11 @@ function App() {
 
         {/* Our Product Page */}
         <Route
-          path="/our-product"
+          path="/services"
           element={
             <>
               <Navbar />
-              <OurProduct />
+              <Services />
               <Footer />
             </>
           }

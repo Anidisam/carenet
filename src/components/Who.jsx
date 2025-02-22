@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../assets/css/aboutus.css";
 
-const AboutUs = () => {
+const Who = () => {
   const navigate = useNavigate(); // Initialize navigate function
 
   return (
@@ -66,4 +66,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Who;

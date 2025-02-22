@@ -1,6 +1,6 @@
 .mission-section {
   padding: 40px 20px;
-  background-color: #f8f9fa;
+  background-color: #fefefe;
 }
 
 /* Heading Styles */
@@ -48,13 +48,13 @@
   width: 100%;
   max-width: 120px;
   height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-.partner-img:hover {
+/* .partner-img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Testimonials Section */
 .testimonial-container {
