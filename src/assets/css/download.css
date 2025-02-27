@@ -1,9 +1,13 @@
 .download-app-section {
-background-color: black;
-  padding: 100px 60px;
+  position: relative;
+  background: linear-gradient(rgba(102, 102, 102, 0), rgba(102, 102, 102, 1));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 200px 100px;
   color: white;
-  
 }
+
 
 .download-app-section h3 {
   font-size: 28px;
@@ -27,7 +31,22 @@ background-color: black;
   align-items: center;
   border-color: white;
   border: none;
-  color: red;
+  color: #fff;
+  background-color: red;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.download-btn2 {
+  display: flex;
+  align-items: center;
+  border-color: white;
+  border: none;
+  color: #fff;
+  background-color: lightblue;
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 10px;
@@ -42,5 +61,9 @@ background-color: black;
 }
 
 .download-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.download-btn2:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
