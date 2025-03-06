@@ -90,7 +90,7 @@ const Mission = () => {
     <div className="mission-section">
       {/* OUR MISSION */}
       <div className="text-center section">
-        <h2 className="fw-bold">OUR MISSION</h2>
+        <h2 className="fw-bold">Our Mission</h2>
         <p className="text-muted">
           Our mission is to improve patient care by providing comprehensive
           clinical information and resources essential to physicians and
@@ -103,17 +103,17 @@ const Mission = () => {
 
       {/* WHO WE ARE */}
       <div className="text-center section">
-        <h2 className="fw-bold">WHO WE ARE</h2>
+        <h2 className="fw-bold">Who We Are</h2>
         <p className="text-muted">
           Medscape is the leading online global destination for physicians and{" "}
-          <br />
+          
           healthcare professionals worldwide, offering the latest medical news
-          and <br />
+          and 
           expert perspectives; essential point-of-care drug and disease
-          information; <br />
-          and relevant professional education and CME. <br />
+          information;
+          and relevant professional education and CME. 
           Medscape membership is free and gives you unlimited access to the
-          entire <br />
+          entire 
           network of sites and services.
         </p>
       </div>
@@ -123,7 +123,7 @@ const Mission = () => {
 
       {/* OUR NETWORK OF PARTNER */}
       <div className="text-center section">
-        <h2 className="fw-bold">OUR NETWORK OF PARTNER</h2>
+        <h2 className="fw-bold">Our Network of Partner</h2>
         <div className="partners-grid">
           {partnerImages.map((image, index) => (
             <div className="partner" key={index}>

@@ -5,24 +5,29 @@
 
 /* Heading Styles */
 .mission-section .fw-bold {
-  color: lightblue;
-  font-size: 2rem;
+  /* color: lightblue; */
+  /* font-size: 40px; */
+  /* font-weight:700px; */
   text-align: center;
 }
 
 .section h2 {
-  font-size: 1.8rem;
+  font-size: 40px;
+  font-weight: 700px;
   margin-bottom: 15px;
-  color: #333;
+  color: #004AAD;
+  
 }
 
 .section p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 24px;
+  color: #192735;
   margin-bottom: 15px;
-  max-width: 600px;
+  width: 728px;
+  /* max-width: 600px; */
   margin: 0 auto;
   text-align: center;
+  font-weight:400px;
 }
 
 .spacer {
