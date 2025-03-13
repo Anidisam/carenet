@@ -45,6 +45,22 @@ ul{
   line-height: 24px;
   cursor: pointer;
 }
+@media (max-width: 480px){
+  .navbar{
+    width:620px;
+    padding-top:32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+  }
+  ul{
+    display:none;
+  }
+}
 
 /* .navbar-btn:hover{
     background-color: #e06d95;
