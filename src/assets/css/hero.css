@@ -4,66 +4,79 @@
   flex-direction: row; /* Default: Row for larger screens */
   align-items: center;
   justify-content: space-between;
-  height: 100vh; 
-  padding: 0 5%; 
-  background: linear-gradient(275.88deg, rgba(102, 102, 102, 0) 1.27%, rgba(46, 2, 26, 0.7) 52.41%, rgba(79, 18, 18, 0.477273) 52.42%, rgba(58, 8, 23, 0.617905) 78.45%) ,linear-gradient(275.07deg, rgba(102, 102, 102, 0) -0.06%, rgba(32, 32, 32, 0.477273) 58.01%, rgba(0, 0, 0, 0.7) 88.24%);
+  min-height: 100vh;
+  padding: 0 5%;
+  background: linear-gradient(
+      275.88deg,
+      rgba(102, 102, 102, 0) 1.27%,
+      rgba(46, 2, 26, 0.7) 52.41%,
+      rgba(79, 18, 18, 0.477273) 52.42%,
+      rgba(58, 8, 23, 0.617905) 78.45%
+    ),
+    linear-gradient(
+      275.07deg,
+      rgba(102, 102, 102, 0) -0.06%,
+      rgba(32, 32, 32, 0.477273) 58.01%,
+      rgba(0, 0, 0, 0.7) 88.24%
+    );
   position: relative;
+  overflow: hidden; /* Prevents scrolling issues */
+  width: 100%;
 }
 
-/* .hero-content {
-  flex: 1;
-  max-width: 50%;
-} */
+/* Hero Content */
+.hero-content {
+  max-width: 600px; /* Limit width */
+}
 
 .hero-content h1 {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 40px;
-  color:#fff;
+  color: #fff;
   margin-bottom: 1rem;
-  width: 430px;
+  max-width: 100%; /* Allow responsive text */
 }
 
 .hero-content p {
   font-size: 24px;
   line-height: 32px;
-  color:#fff; 
-  margin-bottom: 2rem; 
-  width: 350px;
+  color: #fff;
+  margin-bottom: 2rem;
+  max-width: 100%;
 }
 
-/* Buttons Container */
+/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .btn-red {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: 7px;
-  color:white;
-  background-color:#DF014E;
+  color: white;
+  background-color: #df014e;
   border: none;
   font-weight: 700;
   font-size: 16px;
-  gap: 20px;
+  gap: 10px;
   line-height: 24px;
   cursor: pointer;
 }
 
 .btn-red:hover {
-  background-color: gray; 
+  background-color: gray;
 }
-
 
 .btn-outline-red {
   background-color: transparent;
   border: none;
-  padding: 8px;
+  padding: 8px 16px;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 7px;
@@ -73,89 +86,87 @@
 
 .btn-outline-red:hover {
   background-color: gray;
-  color: #fff; 
+  color: #fff;
+}
+
+/* Hero Image */
+.hero-image {
+  max-width: 50%;
+  text-align: center;
 }
 
 .hero-image img {
-  position: absolute;
-  height: 100%;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  position: relative;
 }
 
-/* Media Queries for Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column; /* Stack content vertically on tablets */
-    justify-content: center;
-    height: auto; /* Adjust height */
-    padding: 2rem; /* Add padding */
+    flex-direction: column; /* Stack vertically */
+    text-align: center;
+    height: auto;
+    padding: 4rem 2rem;
   }
 
   .hero-content {
-    max-width: 100%; /* Full width */
-    text-align: center; /* Center-align content */
+    max-width: 100%;
   }
 
   .hero-content h1 {
-    font-size: 2.5rem; /* Adjust heading size */
+    font-size: 2rem; /* Adjust heading */
+    line-height: 1.2;
   }
 
   .hero-content p {
-    font-size: 1.2rem; /* Adjust paragraph size */
+    font-size: 1.2rem;
   }
 
   .hero-buttons {
-    justify-content: center; /* Center buttons */
+    justify-content: center;
   }
 
   .hero-image {
     max-width: 100%;
-    text-align: center; /* Center-align image */
-    margin-top: 2rem; /* Add spacing */
+    margin-top: 2rem;
   }
 
   .hero-image img {
-    max-width: 100%; /* Full-width image */
-    height: auto;
+    width: 80%; /* Scale image down */
   }
 }
 
 @media (max-width: 480px) {
-  .hero-section{
-    display: flex;
-    flex-direction: row;
-    width: 602px;
+  .hero-section {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    /* height: 100vh;  */
-    /* padding: 0 5%;  */
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 100%;
   }
-  .hero-content h1 {
-    font-size: 28px; /* Further reduce heading size */
-    width: 284px;
-    margin-bottom: 30px;
 
+  .hero-content h1 {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Further reduce paragraph size */
-    /* display: none; */
+    font-size: 1rem;
   }
 
-  .btn-red, .btn-outline-red {
-    padding: 0.6rem 1rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Reduce button text size */
-    /* display: none; */
+  .btn-red,
+  .btn-outline-red {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
-  .hero-image img{
-    width:100%;
-    height: 100%;
-    position:absolute;
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 }

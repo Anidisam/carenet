@@ -1,25 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../assets/css/navbar.css";
-// import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  return (
-<nav className= "navbar">
-    <div className="navbar-logo">Carenet</div>
-      <ul>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Services</li>
-      {/* <Link className='link'><li>About</li></Link> */}
-      </ul>
-      
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      
-   
-    <div>
-    <button className="navbar-btn">Download App</button>
-    </div>
-</nav>
+  return (
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <Link to="/">CARENET</Link>
+      </div>
+
+      {/* Hamburger Menu Button */}
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
+
+      <ul className={menuOpen ? "show" : ""}>
+        <li>
+          <Link to="/who-we-are" onClick={() => setMenuOpen(false)}>Who We Are</Link>
+        </li>
+        <li>
+          <Link to="/contact-us" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        </li>
+      </ul>
+
+      <div>
+        <button className="navbar-btn">Download App</button>
+      </div>
+    </nav>
   );
 };
 

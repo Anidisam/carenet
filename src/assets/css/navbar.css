@@ -1,67 +1,99 @@
 .navbar {
   display: flex;
-  justify-content: space-between;  
-  width: 100%;
-  height: 90px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 64px;
-  padding-right: 64px;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
   background-color: #fff;
-
-}
-ul{
-  display: flex;
-  list-style: none;
-  gap:10px;
-  color:#333333;
-
-  /* flex-direction: row; */
- 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-
-.navbar-logo {
-  font-size: 24px;
+.navbar-logo a {
+  font-size: 32px; /* Bigger logo */
   font-weight: bold;
-  color: #192735;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 40px;
-  padding-left: 32px;
-  
+  color: #2e021a;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.navbar-btn{
-  padding: 8px;
-  border-radius:4px;
-  color:white;
-  background-color:#DF014E;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #2e021a;
+}
+
+.navbar-btn {
+  background-color: #2e021a;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  /* font: Montserrat; */
-  font-weight: 700;
-  font-size: 16px;
-  /* gap:8px; */
-  line-height: 24px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
 }
-@media (max-width: 480px){
-  .navbar{
-    width:620px;
-    padding-top:32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
+
+.navbar-btn:hover {
+  background-color: #610332;
+}
+
+/* Mobile Responsive Styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #2e021a;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar ul.show {
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-
   }
-  ul{
-    display:none;
+
+  .navbar ul li {
+    padding: 10px 0;
   }
 }
-
-/* .navbar-btn:hover{
-    background-color: #e06d95;
-} */
