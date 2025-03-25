@@ -1,114 +1,49 @@
-// import React, { useState } from "react";
-// import "../assets/css/testimonials.css";
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React from "react";
+import "../assets/css/testimonials.css"; // Import the CSS file
 
-// import coliquio from "../assets/images/coliquio.svg";
-// import frontline from "../assets/images/frontline.svg";
-// import jim from "../assets/images/jim.svg";
-// import qxmd from "../assets/images/qxmd.svg";
-// import saned from "../assets/images/saned.svg";
+import image1 from "../assets/images/testi 1.svg";
+import image2 from "../assets/images/testi 2.svg";
+import image3 from "../assets/images/testi 3.svg";
 
-
-// const testimonials = [
-//   {
-//     id: 1,
-//     name: "Solape Lagbaja",
-//     role: "Surgeon",
-//     rating: 5,
-//     image: coliquio, 
-//     quote: "Simply the best",
-//     description:
-//       "This platform has helped me grow! Thanks Carenet, absolutely recommend it for all pros.",
-//   },
-//   {
-//     id: 2,
-//     name: "John Doe",
-//     role: "Cardiologist",
-//     rating: 4,
-//     image: frontline,
-//     quote: "Great Experience!",
-//     description:
-//       "An amazing platform that has enhanced my career and network with other professionals.",
-//   },
-//   {
-//     id: 3,
-//     name: "Jane Smith",
-//     role: "Dentist",
-//     rating: 5,
-//     image: jim,
-//     quote: "Fantastic!",
-//     description: "I have learned so much from Carenet. Highly recommended!",
-//   },
-//   {
-//     id: 4,
-//     name: "Emily Johnson",
-//     role: "Pediatrician",
-//     rating: 4,
-//     image: qxmd,
-//     quote: "Amazing Service",
-//     description: "A platform that truly cares about medical professionals.",
-//   },
-//   {
-//     id: 5,
-//     name: "Michael Brown",
-//     role: "Orthopedic Surgeon",
-//     rating: 5,
-//     image: saned,
-//     quote: "Top-notch platform!",
-//     description: "Carenet has provided me with invaluable resources!",
-//   },
-// ];
+const testimonials = [
+  {
+    name: "Dr lara",
+    role: "health care",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+    image: image1,
+  },
+  {
+    name: "Dr smith",
+    role: "SLT",
+    text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.",
+    image: image2,
+  },
+  {
+    name: "Dr wilson",
+    role: "MLS",
+    text: "Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh.",
+    image: image3,
+  },
+];
 
 
-// const Testimonials = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
+const Testimonials = () => {
+  return (
+    <div className="testimonial-section">
+      {testimonials.map((testimonial, index) => (
+        <div key={index} className="testimonial-container">
+          <img
+            src={testimonial.image}
+            alt={testimonial.name}
+            className="testimonial-img"
+          />
+          <h1>{testimonial.name}</h1>
+          <h2>{testimonial.role}</h2>
+          <p>{testimonial.text}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-//   const handleNext = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-//     );
-//   };
-
-//   const handlePrev = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   return (
-//     <div className="testimonial-container">
-
-//       <button className="arrow left" onClick={handlePrev}>
-//         <FaArrowLeft />
-//       </button>
-
-//       <div className="testimonial-card">
-//         <img
-//           src={testimonials[currentIndex].image}
-//           alt={testimonials[currentIndex].name}
-//           className="testimonial-image"
-//         />
-
-//         <div className="testimonial-content">
-//           <h3>{testimonials[currentIndex].name}</h3>
-//           <p className="role">{testimonials[currentIndex].role}</p>
-//           <p className="quote">"{testimonials[currentIndex].quote}"</p>
-//           <p className="description">
-//             {testimonials[currentIndex].description}
-//           </p>
-//           <div className="stars">
-//             {"★".repeat(testimonials[currentIndex].rating)}
-//             {"☆".repeat(5 - testimonials[currentIndex].rating)}
-//           </div>
-//         </div>
-//       </div>
-
-
-//       <button className="arrow right" onClick={handleNext}>
-//         <FaArrowRight />
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default Testimonials;
+export default Testimonials;
