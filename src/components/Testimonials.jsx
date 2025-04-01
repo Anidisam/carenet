@@ -7,21 +7,21 @@ import image3 from "../assets/images/testi 3.svg";
 
 const testimonials = [
   {
-    name: "Dr. Lara",
-    role: "Health Care",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+    name: "LAGBAJA TEMEDU",
+    role: "Excellent Services",
+    text: "I love the services. Fast, quality and cool. Highly recommend it for everyone!",
     image: image1,
   },
   {
-    name: "Dr. Smith",
-    role: "SLT",
-    text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.",
+    name: "CLAUDIA JANE DOE",
+    role: "At long last, a place to network",
+    text: "Finally, I find a place to network with people in my field, share ideas and get to help real people virtually!",
     image: image2,
   },
   {
-    name: "Dr. Wilson",
-    role: "MLS",
-    text: "Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh.",
+    name: "FATIMA FU KHYU",
+    role: "A place for health concious people",
+    text: "Download the app and enjoy everything it has to offer. I and my husband are always on here. Enjoy it!",
     image: image3,
   },
 ];
@@ -29,18 +29,20 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="testimonial-section">
-      <h1>Testimonials</h1>
-      {testimonials.map((testimonial, index) => (
-        <div
-          key={index}
-          className="testimonial-container"
-          style={{ backgroundImage: `url(${testimonial.image})` }} // Background image
-        >
-          <h1>{testimonial.name}</h1>
-          <h2>{testimonial.role}</h2>
-          <p>{testimonial.text}</p>
-        </div>
-      ))}
+      <h1 className="section-title"><b>Testimonials</b></h1>
+      <div className="testimonial-wrapper">
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className={`testimonial-container position-${index}`}
+            style={{ backgroundImage: `url(${testimonial.image})` }} // Background image
+          >
+            <h2>{testimonial.name}</h2>
+            <h3>{testimonial.role}</h3>
+            <p>{testimonial.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

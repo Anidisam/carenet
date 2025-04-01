@@ -1,25 +1,30 @@
 .testimonial-section {
-  display: flex;
-  justify-content: center;
-  gap: 2rem; /* Space between containers */
   padding: 4rem 2rem;
 }
 
-.testimonial-section h1 {
-  justify-content: center;
-  font-size: 30px;
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
 }
 
+.testimonial-wrapper {
+  display: flex;
+  justify-content: space-between; /* Desktop: left, center, right */
+  gap: 15px;
+}
+
+/* Individual testimonial container */
 .testimonial-container {
-  width: 300px; /* Adjust width */
-  height: 400px; /* Adjust height */
+  width: 900px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
-  justify-content: flex-end; /* Push content to bottom */
+  align-items: flex-start;
+  justify-content: flex-end;
   text-align: left;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,25 +32,23 @@
   position: relative;
 }
 
-/* h1 with black background */
-.testimonial-container h1 {
+/* Name with black background (only as wide as text) */
+.testimonial-container h2 {
   background-color: black;
   color: white;
   padding: 10px;
   font-size: 22px;
-  width: 100%; /* Make it touch the left and right */
+  display: inline-block;
   text-align: left;
   margin-bottom: 5px;
 }
 
-/* h2 should be just below h1, touching the left */
-.testimonial-container h2 {
+.testimonial-container h3 {
   font-size: 18px;
   color: white;
   margin-bottom: 10px;
 }
 
-/* Testimonial text */
 .testimonial-container p {
   font-size: 16px;
   color: white;
@@ -53,15 +56,30 @@
   width: 90%;
 }
 
-/* Responsive */
+/* MOBILE VIEW - Enable horizontal scrolling */
 @media (max-width: 768px) {
-  .testimonial-section {
-    flex-direction: column;
-    align-items: center;
+  .testimonial-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Makes scrolling smooth */
+    gap: 10px;
+    padding-bottom: 10px; /* Add space so it doesn’t cut off */
+    -webkit-overflow-scrolling: touch; /* Better scrolling on iOS */
   }
 
   .testimonial-container {
     width: 90%;
-    height: 300px;
+    min-width: 90%; /* Ensure each card takes full width */
+    scroll-snap-align: start; /* Snap effect */
+  }
+
+  /* Hide scrollbar */
+  .testimonial-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-wrapper {
+    scrollbar-width: none;
   }
 }
