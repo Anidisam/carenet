@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Who from "./components/Who"
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import Privacy from "./components/Privacy"
 
 function App() {
   return (
@@ -54,13 +55,24 @@ function App() {
           }
         />
 
-          {/* Contact us page*/}
+        {/* Contact us page*/}
         <Route
           path="/contact-us"
           element={
             <>
               <Navbar />
               <ContactUs />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="/Privacy-policy"
+          element={
+            <>
+              <Navbar />
+              <Privacy />
               <Footer />
             </>
           }
