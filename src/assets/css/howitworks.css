@@ -1,0 +1,65 @@
+.how-it-works-wrapper {
+  width: 100%;
+}
+
+/* Blue background section */
+.how-it-works-header {
+  background-color: #001f5a;
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.how-it-works-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.how-it-works-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* White background section with images */
+.how-it-works-images {
+  background-color: white;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step-image {
+  width: 220px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.step-image:hover {
+  border: 2px solid black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .how-it-works-images {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+  }
+
+  .step-image {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .how-it-works-header h2 {
+    font-size: 2rem;
+  }
+}

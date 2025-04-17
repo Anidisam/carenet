@@ -11,6 +11,7 @@ import Who from "./components/Who"
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Privacy from "./components/Privacy"
+import Howitworks from "./components/Howitworks";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <>
               <Navbar />
               <Who />
+              <Howitworks />
               <Footer />
             </>
           }
