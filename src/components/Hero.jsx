@@ -6,9 +6,9 @@ import Arrow from "../assets/images/arrow-c.svg"
 const Hero = () => {
   return (
     <div className="hero-section" >
-      {/* Left Content */}
       <div className="hero-content">
-        <div>
+        {/* Left Content */}
+        <div className="hero-content-left">
           <h1>
             Connect. Collaborate. Care.
           </h1>
@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
         <div className="hero-image"> 
-        <img src={HeroImage} alt="Medical Professional"  />
+        <img src={HeroImage} alt="Medical Professional" />
       </div>
       
     </div>
