@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import Main from "./components/Main";
 import Mission from "./components/Mission";
 import Testimonial from "./components/Testimonials";
 import Download from "./components/Download";
@@ -54,6 +53,7 @@ function App() {
             <>
               <Navbar />
               <Services />
+          
               <Footer />
             </>
           }

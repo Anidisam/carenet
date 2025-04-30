@@ -4,41 +4,42 @@
 }
 
 .our-product h2 {
-  color: #333;
-  font-size: 24px;
+  color: var(--grey-600, #323136);
+  font-size: 32px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .our-product p {
-  font-size: 18px;
-  color: #666;
-  max-width: 600px;
+  font-size: 24px;
+  color:var(--grey-600, #323136);
+
+  /* max-width: 600px; */
   margin: 0 auto 20px;
+  font-weight: 400;
 }
 
-/* Grid Layout */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px;
-  padding: 20px;
-}
+/* Services-info */
 
-/* Individual Product Item */
-.product-item {
+.services-1 h2{
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  color:#000000;
   text-align: center;
 }
+.service{
+  background-color: #E6EEF5;
 
-/* Image Styling */
-.product-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px; /* Optional rounded corners */
 }
+.serv{
+  display: flex;
+  flex-direction: row;
 
+}
+.telemed-image{
+  width: 100%;
+}
 /* Responsive Design */
 @media screen and (max-width: 900px) {
   .product-grid {

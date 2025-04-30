@@ -17,7 +17,9 @@ const Who = () => {
             Carenet is a platform dedicated to connecting healthcare
             professionals worldwide. Our mission is to provide top-quality
             medical resources, networking opportunities, and expert insights to
-            improve patient care. Whether you're a doctor, nurse, or medical
+            improve patient care. 
+          
+            Whether you're a doctor, nurse, or medical
             student, Carenet offers essential tools to enhance your career and
             knowledge. Introducing CareNet: Revolutionizing Healthcare with
             Virtual Sessions In today's fast-paced world, finding time to visit
