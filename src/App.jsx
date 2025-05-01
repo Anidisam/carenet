@@ -12,7 +12,7 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Privacy from "./components/Privacy"
 import Howitworks from "./components/Howitworks";
-import Benefits from "./components/benefits";
+import Benefits from "./components/Benefits";
 
 function App() {
   return (
