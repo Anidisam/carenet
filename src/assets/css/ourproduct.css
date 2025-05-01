@@ -1,28 +1,32 @@
 .our-product {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
 }
 
-.our-product h2 {
+ .our-product h2 {
   color: var(--grey-600, #323136);
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: 700;
+  margin-top: 5rem;
 }
 
 .our-product p {
   font-size: 24px;
   color:var(--grey-600, #323136);
-
-  /* max-width: 600px; */
-  margin: 0 auto 20px;
-  font-weight: 400;
+  font-weight: 400; 
+}
+.our-product-header{
+  text-align: center;
 }
 
 /* Services-info */
 
 .services-1 h2{
-  margin-top: 80px;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   font-weight: 700;
   font-size: 32px;
   color:#000000;
@@ -30,15 +34,54 @@
 }
 .service{
   background-color: #E6EEF5;
-
+    /* padding-top: 6rem;
+  padding-bottom:  6rem; */
+  /* width: 100vw; */
 }
 .serv{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  align-items: center;
+  /* padding: 10px; */
+  gap: 2rem;
+  padding: 20px 30px;
+}
+.telemedicine-info{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+  gap: 10px;
 
 }
-.telemed-image{
-  width: 100%;
+.telemedicine-info h3{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+ 
+}
+.img-1{
+  padding: 8px;
+  border-radius: 8px;
+  width: 70rem;
+  margin-right: 5px;
+  padding: 10px;
+}
+.all-services{
+display: flex;
+flex-direction: column;
+gap: 60px;
+padding: 0px 10px;
+}
+.all-paragraph{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color:var(--grey-600, #323136);
+  ;
 }
 /* Responsive Design */
 @media screen and (max-width: 900px) {
@@ -54,7 +97,7 @@
 }
 
 /* Back Button */
-.back-home-btn {
+/* .back-home-btn {
   padding: 10px 15px;
   background: blue;
   color: white;
@@ -62,4 +105,4 @@
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
-}
+} */
