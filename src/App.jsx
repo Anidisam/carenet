@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Privacy from "./components/Privacy"
 import Howitworks from "./components/Howitworks";
+import Benefits from "./components/benefits";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Navbar />
               <Who />
               <Howitworks />
+              <Benefits />
               <Footer />
             </>
           }
