@@ -8,7 +8,7 @@
   margin-bottom: 2rem;
 }
 
-/* Layout - Flexbox to Align Items */
+/* Desktop Layout */
 .download-container {
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@
   width: 600px;
   height: 900px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .main-image img {
@@ -54,12 +55,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .stacked-image {
   width: 400px;
   height: 270px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .stacked-image img {
@@ -69,20 +72,32 @@
   object-fit: cover;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* MOBILE + TABLET */
+@media (max-width: 1024px) {
   .download-container {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 20px;
   }
 
-  .main-image {
-    width: 90%;
-    height: auto;
+  .download-container::-webkit-scrollbar {
+    display: none;
   }
 
+  /* Put all images in a row */
+  .stacked-images {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Resize images for mobile scroll */
+  .main-image,
   .stacked-image {
-    width: 90%;
+    width: 300px;
     height: auto;
+    scroll-snap-align: start;
   }
 }

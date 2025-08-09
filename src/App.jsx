@@ -45,6 +45,7 @@ function App() {
               <Howitworks />
               <Benefits />
               <Features />
+              <Download />
               <Footer />
             </>
           }
